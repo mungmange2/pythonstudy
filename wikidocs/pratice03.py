@@ -1,5 +1,6 @@
 # 03장 연습문제
 # https://wikidocs.net/42527
+# import statistics
 
 print("---Q.1---")
 a = "Life is too short, you need python"
@@ -57,6 +58,7 @@ for score in score_lists:
     total += score
 
 print(total / (len(score_lists)))
+# print(fmeans(score_lists))
 print("--------\n")
 
 

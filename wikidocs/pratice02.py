@@ -7,6 +7,11 @@ korean = 80
 english = 75
 math = 55
 print((korean + english + math) / 3)
+
+# # # 
+# list = [80, 75, 55]
+# print(sum(list) / len(list))
+# # #
 print("--------\n")
 
 
@@ -23,8 +28,14 @@ pin = "881120-1068234" # 03, 04
 print("---Q.03---")
 print(pin[0:6])
 print(pin[7:14])
+
+#print(pin.split("-")) # 문자열 분리
+# print(pin.find("-")) # 위치 알려주기 
+# print(pin.index("-"))  # 위치 알려주기 
 #print(pin[7:])  # 이렇게 해도 됨
 print("--------\n")
+
+
 
 print("---Q.04---")
 if pin[7] == "2":
@@ -44,8 +55,11 @@ print("--------\n")
 
 print("---Q.06---")
 list = [1, 3, 5, 4, 2]
-list.sort()
-list.reverse()
+# list.sort()
+# list.reverse()
+
+# 한번에 하는 방법
+list.sort(reverse=True)
 print(list)
 print("--------\n")
 
@@ -66,7 +80,7 @@ print("--------\n")
 print("?---Q.09---")
 a = dict()
 # a['name'] = 'python'
-# a[('a',)] = 'python'
+#a[('a','b')] = 'python'
 #a[[1]] = 'python' # -> {}안에 빈 {}을 넣을 수 없음. 정확히는 딕셔너리 키로 변하는 값을 사용할 수 없음 (문자열 튜프 숫자등은 가능)
 # a[250] = 'python'
 print(a)
